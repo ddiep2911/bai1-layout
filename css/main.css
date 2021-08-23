@@ -23,7 +23,6 @@ body {
 }
 
 .contact .container .contact-item {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -127,7 +126,7 @@ body {
 
 .contact .container .contact-item .item .img .img-txt p {
   font-size: 13px;
-  color: #99a9b5;
+  color: #cad3d3;
   font-weight: 600;
 }
 
@@ -148,7 +147,7 @@ body {
 }
 
 .contact .container .contact-item .item .item-content {
-  background-color: #f4f6f7;
+  background-color: #ffffff;
   color: #7f8e99;
   font-size: 15px;
   word-break: break-word;
