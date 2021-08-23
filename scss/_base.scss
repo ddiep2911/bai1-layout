@@ -11,6 +11,7 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+
       .item {
         width: 362px;
         padding: 0 22px;
@@ -31,10 +32,12 @@
           left: 50%;
           transform: translateX(-50%);
           p {
-            font-size: $fs-money;
+            font-size: $fs-number-money;
+            font-weight: 300;
           }
           span {
-            font-size: $fs-title-small;
+            font-size: $fs-money;
+            font-weight: $font-weight-bold;
             color: $color-title-small;
           }
         }
@@ -53,6 +56,8 @@
             transform: translate(-50%, -50%);
             font-size: $fs-logo;
             color: $color-logo;
+            font-family: $font-family-montserrat;
+            font-weight: bold;
             letter-spacing: 1px;
           }
         }
@@ -63,15 +68,21 @@
             width: 100%;
             height: auto;
           }
-          h2 {
+          .img-txt {
             position: absolute;
-            letter-spacing: 1px;
-            font-weight: 100;
-            font-size: $fs-img;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            color: $color-img;
+            h2 {
+              font-weight: $font-weight-light;
+              font-size: $fs-img;
+              color: $color-img;
+            }
+            p {
+              font-size: $fs-title-small;
+              color: $color-img-small;
+              font-weight: $font-weight-bold;
+            }
           }
         }
         .item-money-ocean {
@@ -91,36 +102,43 @@
           }
         }
         .item-content {
-          background-color: #ffff;
+          background-color: $bg-text-content;
           color: $color-text-content;
           font-size: $fs-text-content;
           word-break: break-word;
           .item-title {
-            padding: 15px;
-            font-size: $fs-title-small;
-            .title {
+            padding: 15px 0;
+            h2 {
               font-size: $fs-title;
-              font-weight: 100;
+              font-weight: $font-weight-light;
+            }
+            p {
+              font-size: $fs-title-small;
+              font-weight: $font-weight-bold;
             }
           }
           .item-txt {
-            p {
-              padding: 15px 0;
-              background-color: $bg-text-content;
-            }
-            span {
-              padding: 15px 0;
-              display: block;
+            li {
+              list-style: none;
+              font-size: $fs-text-content;
+              font-weight: $font-weight-bold;
+              p {
+                padding: 15px 0;
+                background-color: $bg-text-content;
+              }
+              span {
+                padding: 15px 0;
+                display: block;
+              }
             }
           }
           button {
             margin: 40px 0;
-            padding: 12px 22px;
+            padding: 12px 25px;
             font-size: $fs-btn;
+            font-family: $font-family-montserrat;
             background: none;
-            &:hover {
-              cursor: pointer;
-            }
+            cursor: pointer;
           }
           .btn-ocean {
             color: $color-btn-ocean;
@@ -145,6 +163,14 @@
               color: $color-btn-forest-hover;
               background-color: $bg-btn-forest-hover;
             }
+          }
+        }
+      }
+
+      .item1 {
+        .img-txt {
+          h2 {
+            font-family: $font-family-myriad !important;
           }
         }
       }

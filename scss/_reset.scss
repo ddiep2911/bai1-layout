@@ -4,8 +4,14 @@
   box-sizing: border-box;
 }
 
+$font-family-myriad: "myriad pro";
+
+$font-family-montserrat: "Montserrat", sans-serif;
+
+$font-weight-light: 300;
+$font-weight-bold: 600;
+
 html,
 body {
-  font-family: "Roboto", sans-serif;
-  font-size:18px
+  font-family: "Source Sans Pro", sans-serif;
 }
