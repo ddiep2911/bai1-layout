@@ -171,16 +171,11 @@ body {
   list-style: none;
   font-size: 15px;
   font-weight: 600;
+  padding: 15px 0;
 }
 
-.contact .container .contact-item .item .item-content .item-txt li p {
-  padding: 15px 0;
+.contact .container .contact-item .item .item-content .item-txt li:nth-child(odd) {
   background-color: #f4f6f7;
-}
-
-.contact .container .contact-item .item .item-content .item-txt li span {
-  padding: 15px 0;
-  display: block;
 }
 
 .contact .container .contact-item .item .item-content button {

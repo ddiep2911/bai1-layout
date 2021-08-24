@@ -121,13 +121,9 @@
               list-style: none;
               font-size: $fs-text-content;
               font-weight: $font-weight-bold;
-              p {
-                padding: 15px 0;
+              padding: 15px 0;
+              &:nth-child(odd) {
                 background-color: $bg-text-content;
-              }
-              span {
-                padding: 15px 0;
-                display: block;
               }
             }
           }
