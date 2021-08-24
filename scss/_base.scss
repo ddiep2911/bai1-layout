@@ -1,0 +1,174 @@
+.contact {
+  width: 100%;
+  background-color: $bg-contact;
+  padding: 75px 0;
+  text-align: center;
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    .contact-item {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .item {
+        width: 362px;
+        padding: 0 22px;
+        position: relative;
+        margin: 35px 0;
+        .item-money {
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          flex-wrap: wrap;
+          width: 90px;
+          height: 90px;
+          border-radius: 50%;
+          z-index: 1;
+          background-color: $shared-white;
+          top: -7%;
+          left: 50%;
+          transform: translateX(-50%);
+          p {
+            font-size: $fs-number-money;
+            font-weight: 300;
+          }
+          span {
+            font-size: $fs-money;
+            font-weight: $font-weight-bold;
+            color: $color-money-text;
+          }
+        }
+        .item-logo {
+          position: absolute;
+          z-index: 1;
+          top: -10px;
+          left: 10px;
+          img {
+            width: 100%;
+          }
+          p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: $fs-logo;
+            color: $shared-white;
+            font-family: $font-family-montserrat;
+            font-weight: bold;
+            letter-spacing: 1px;
+          }
+        }
+        .img {
+          position: relative;
+          img {
+            display: block;
+            width: 100%;
+            height: auto;
+          }
+          .img-txt {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            h2 {
+              font-weight: $font-weight-light;
+              font-size: $fs-img;
+              color: $shared-white;
+            }
+            p {
+              font-size: $fs-title-small;
+              color: $color-img-small;
+              font-weight: $font-weight-bold;
+            }
+          }
+        }
+        .item-money-ocean {
+          p {
+            color: $color-money-ocean;
+          }
+        }
+        .item-money-mountains {
+          background-color: $bg-money-mountains;
+          p {
+            color: $color-money-mountains;
+          }
+        }
+        .item-money-forest {
+          p {
+            color: $color-money-forest;
+          }
+        }
+        .item-content {
+          background-color: $shared-white;
+          color: $color-text-content;
+          font-size: $fs-text-content;
+          word-break: break-word;
+          .item-title {
+            padding: 15px 0;
+            h2 {
+              font-size: $fs-title;
+              font-weight: $font-weight-light;
+            }
+            p {
+              font-size: $fs-title-small;
+              font-weight: $font-weight-bold;
+            }
+          }
+          .item-txt {
+            li {
+              list-style: none;
+              font-size: $fs-text-content;
+              font-weight: $font-weight-bold;
+              padding: 15px 0;
+              &:nth-child(odd) {
+                background-color: $bg-text-content;
+              }
+            }
+          }
+          button {
+            margin: 40px 0;
+            padding: 12px 25px;
+            font-size: $fs-btn;
+            font-family: $font-family-montserrat;
+            background: none;
+            cursor: pointer;
+          }
+          .btn-ocean {
+            color: $color-btn-ocean;
+            border: 1px solid $border-btn-ocean;
+            &:hover {
+              background-color: $bg-btn-ocean-hover;
+              color: $color-btn-ocean-hover;
+            }
+          }
+          .btn-mountains {
+            color: $color-btn-mountains;
+            border: 1px solid $border-btn-mountains;
+            &:hover {
+              color: $color-btn-mountains-hover;
+              background-color: $bg-btn-mountains-hover;
+            }
+          }
+          .btn-forest {
+            color: $color-btn-forest;
+            border: 1px solid $border-btn-forest;
+            &:hover {
+              color: $color-btn-forest-hover;
+              background-color: $bg-btn-forest-hover;
+            }
+          }
+        }
+      }
+
+      .item1 {
+        .img-txt {
+          h2 {
+            font-family: $font-family-myriad !important;
+          }
+        }
+      }
+    }
+  }
+}
